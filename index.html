@@ -12,7 +12,10 @@
 <body>
   <div class="topbar d-flex justify-content-between align-items-center mb-4">
     <form class="d-flex w-50">
-      <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search">
+      <div class="search-wrapper w-100">
+        <i class="bi bi-search search-icon" aria-hidden="true"></i>
+        <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
+      </div>
     </form>
     <div class="d-flex align-items-center gap-3">
       <button class="btn btn-link p-0 text-reset" aria-label="Notifications">
@@ -30,6 +33,10 @@
       <img src="img/Inzur.png" alt="Inzure" class="" width="200" height="70">
       <br>
       <br>
+      <div class="sidebar-section mb-2">
+        <div class="dropdown-label">Gestión</div>
+        <hr class="sidebar-hr">
+      </div>
       <div class="accordion" id="sidebarAccordion">
         <div class="accordion-item border-0">
           <h2 class="accordion-header" id="headingAdmin">
@@ -48,12 +55,10 @@
             </div>
           </div>
         </div>
-
-      <div class="accordion" id="sidebarAccordion">
         
-        <div class="accordion-item border-0">
-          <h2 class="accordion-header" id="headingCartera">
-            <button class="accordion-button collapsed bg-transparent px-0 nav-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCartera" aria-expanded="false" aria-controls="#collapseCartera">
+          <div class="accordion-item border-0">
+            <h2 class="accordion-header" id="headingCartera">
+            <button class="accordion-button collapsed bg-transparent px-0 nav-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCartera" aria-expanded="false" aria-controls="collapseCartera">
               <i class="bi bi-wallet2 me-2"></i> Cartera
             </button>
           </h2>
@@ -70,9 +75,6 @@
             </div>
           </div>
         </div>
-     </div>
-
-       
 
         <div class="accordion-item border-0">
           <h2 class="accordion-header" id="headingCRM">
@@ -124,11 +126,19 @@
                   <li class="nav-item"><a class="nav-link" href="#">Cartera</a></li>
                   <li class="nav-item"><a class="nav-link" href="#">Cobranzas</a></li>
                   <li class="nav-item"><a class="nav-link" href="#">Siniestros</a></li>
-                  
               </ul>
             </div>
           </div>
         </div>
+      </div>
+    </aside>
+    <!-- Sidebar user panel -->
+    <aside class="sidebar-user d-none d-md-block">
+      <div class="user-panel text-center">
+        <div class="user-bg"></div>
+        <img src="img/Inzur.png" alt="User" class="user-avatar">
+        <div class="user-name mt-3">Zypnaxe</div>
+        <button class="btn user-btn mt-2">Propiedades</button>
       </div>
     </aside>
 
@@ -227,5 +237,6 @@
     </main>
   </div>
  
-</body>
-</html>
+  <footer class="site-footer" aria-label="Pie de página">Zynapxe Ai</footer>
+ </body>
+ </html>
